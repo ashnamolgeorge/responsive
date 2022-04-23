@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flex</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		background-image: url("mountainn.jpg");
+		background-repeat: no-repeat;
+
+        }
+	ul{
+		color: white;
+
+	}
+	.heading ul{
+		padding-top: 20px;
+		margin-top: 0;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.heading{
+		font-size: 20px;
+		word-spacing: 70px;
+		background-color: black;
+		height: 60px;
+
+	}
+	li{
+		list-style: none;
+	}
+	.flex-container{
+
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+		width: 100%;
+	    height: 400px;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    justify-content: space-evenly;
+	    
+
+	}
+	.first,.second,.third{
+		border: 4px solid black;
+		height: 300px;
+		width: 300px;
+		padding: auto;
+		margin-bottom: 30 px;
+		text-align: center;
+		border-radius: 15px;
+		color: white;
+		width: 300px;
+		background-color: black;
+		opacity: 80%;
+		margin-bottom: 40px;
+	}
+
+	}
+	@media screen and(max-width: 900px)
+	{
+		.flex-container{
+			flex-direction: column;
+		}
+		.first,.second,.third{
+			width: 70%;
+			
+		}
+		ul{
+			width: 40%;
+		}
+		ul li{
+			font-size: 23px;
+			padding-top: 10px;
+		}
+	}
+	
+</style>
+<body>
+<div class="heading">
+	<ul>
+		<li>Home</li>
+		<li>Gallery</li>
+		<li>AboutUs</li> 
+		<li>ContactUs</li>  </ul>
+</div>
+<div class="flex-container">
+	<div class="first">
+		<h1>Heading</h1>
+		<p>CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size.</p>
+	</div>
+	<div class="second">
+		<h1>Heading</h1>
+		<p>CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size.</p>
+	</div>
+	<div class="third">
+		<h1>Heading</h1>
+		<p>CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size.</p>
+	</div>
+</div>
+</body>
+</html>
